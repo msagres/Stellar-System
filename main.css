@@ -58,19 +58,17 @@ html {
     font-weight: 500;
     font-family: 'Mohave';
     margin-bottom: 4rem;
-    color: rgba(7, 26, 46);
-    text-shadow: #e0e0e0 2px 2px 0;
-
+    color: rgba(7, 26, 46, .8);
 }
 
 .container i {
-    position: relative;
     font-size: 3.5rem;
     animation: text-shadow 5s ease-in-out infinite;
     transform: rotate(-90deg);
     margin-right: auto;
     text-align: center;
     color: rgba(7, 26, 46);
+    padding-right: 7.8rem;
 }
 
 .bannerimg {
