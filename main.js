@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $(".particules").delay(650).animate({
+    $(".particules").delay(450).animate({
         "opacity": "1"
-    }, 2000);
+    }, 1600);
 
-    $(".sun").delay(50).animate({
+    $(".sun").delay(150).animate({
         "opacity": "1"
     }, 1500);
 });

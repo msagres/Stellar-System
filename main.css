@@ -31,7 +31,6 @@ html {
     justify-content: center;
     text-align: center;
     height: 100%;
-    z-index: 200;
     position: relative;
 }
 
@@ -52,8 +51,8 @@ html {
 .slideDown {
     animation-name: slideDown;
     -webkit-animation-name: slideDown;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
+    animation-duration: 850ms;
+    -webkit-animation-duration: 850ms;
     animation-timing-function: ease;
     -webkit-animation-timing-function: ease;
     visibility: visible !important;
@@ -73,7 +72,8 @@ html {
 
 .container i {
     font-size: 3.5rem;
-    animation: text-shadow 5s ease-in-out infinite;
+    animation: text-shadow 6s ease-in-out infinite;
+    animation-delay: 350ms;
     transform: rotate(-90deg);
     margin-right: auto;
     text-align: center;
