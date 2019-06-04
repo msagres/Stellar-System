@@ -1,11 +1,7 @@
 $(document).ready(function () {
-    $(".particules").delay(650).animate({
+    $(".particules").delay(50).animate({
         "opacity": "1"
     }, 1600);
-
-    $(".sun").delay(150).animate({
-        "opacity": "1"
-    }, 1500);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
