@@ -10,6 +10,6 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
-      document.getElementById("ss").className = 'slideDown';
+      document.getElementById("stellarSystem").className = 'slideDown';
     }, 200);
   }, false);
