@@ -16,12 +16,10 @@ html {
     flex-direction: row;
     width: 100%;
     height: 100%;
-    /* background: url("/img/bg.png") fixed no-repeat; */
-    
+    background: url("/img/bg.png") fixed no-repeat;
     background-size: cover;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid purple;
 }
 
 .bannerdescription {
@@ -31,7 +29,6 @@ html {
     align-content: center;
     justify-content: center;
     text-align: center;
-    border: 5px solid blue;
     height: 100%;
     z-index: 200;
     position: relative;
@@ -44,7 +41,6 @@ html {
     font-weight: bold;
     font-family: 'Anurati';
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
-    flex-wrap: wrap;
     font-size: 5.5rem;
     padding: 0 0rem 0 42%;
     margin-right: auto;
@@ -62,17 +58,19 @@ html {
     font-weight: 500;
     font-family: 'Mohave';
     margin-bottom: 4rem;
-    color: grey;
-    
+    color: rgba(7, 26, 46);
+    text-shadow: #e0e0e0 2px 2px 0;
+
 }
 
 .container i {
+    position: relative;
     font-size: 3.5rem;
-    margin: 0 auto;
     animation: text-shadow 5s ease-in-out infinite;
     transform: rotate(-90deg);
     margin-right: auto;
-    margin-left: 60%;
+    text-align: center;
+    color: rgba(7, 26, 46);
 }
 
 .bannerimg {
@@ -80,7 +78,6 @@ html {
     flex-flow: wrap;
     align-content: center;
     align-items: center;
-    justify-content: center border: 2px solid blue;
     width: 100%;
 }
 
@@ -121,55 +118,55 @@ html {
 
 
 @keyframes text-shadow {
-    0% {  
+    0% {
         transform: rotate(-90deg) translateX(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
             0 0 0 #fefc4b;
     }
 
-    20% {  
-        transform: rotate(-90deg) translateX(-1em);
-        text-shadow: 
-            0 0.125em 0 #0c2ffb, 
-            0 0.25em 0 #2cfcfd, 
-            0 -0.125em 0 #fb203b, 
+    20% {
+        transform: rotate(-90deg) translateX(-0.5em);
+        text-shadow:
+            0 0.125em 0 #0c2ffb,
+            0 0.25em 0 #2cfcfd,
+            0 -0.125em 0 #fb203b,
             0 -0.25em 0 #fefc4b;
     }
 
-    40% {  
-        transform: rotate(-90deg) translateX(0.5em);
-        text-shadow: 
-            0 -0.0625em 0 #0c2ffb, 
-            0 -0.125em 0 #2cfcfd, 
-            0 0.0625em 0 #fb203b, 
+    40% {
+        transform: rotate(-90deg) translateX(0.9em);
+        text-shadow:
+            0 -0.0625em 0 #0c2ffb,
+            0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #fb203b,
             0 0.125em 0 #fefc4b;
     }
-    
-   60% {
+
+    60% {
         transform: rotate(-90deg) translateX(-0.25em);
-        text-shadow: 
-            0 0.03125em 0 #0c2ffb, 
-            0 0.0625em 0 #2cfcfd, 
-            0 -0.03125em 0 #fb203b, 
+        text-shadow:
+            0 0.03125em 0 #0c2ffb,
+            0 0.0625em 0 #2cfcfd,
+            0 -0.03125em 0 #fb203b,
             0 -0.0625em 0 #fefc4b;
     }
 
-    80% {  
+    80% {
         transform: rotate(-90deg) translateX(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
             0 0 0 #fefc4b;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
     * {
-      animation: none !important;
-      transition: none !important;
+        animation: none !important;
+        transition: none !important;
     }
 }
