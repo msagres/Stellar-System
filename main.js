@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".particules").delay(450).animate({
+    $(".particules").delay(650).animate({
         "opacity": "1"
     }, 1600);
 
