@@ -8,3 +8,8 @@ $(document).ready(function () {
     }, 1500);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.getElementById("stellarSystem").className = 'slideDown';
+    }, 200);
+  }, false);
