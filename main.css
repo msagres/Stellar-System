@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,99 @@ html {
     overflow: hidden;
 }
 
+/* GENERAL */
+
+
+/* LOADER */
+.loadercontainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    z-index: 999999999;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 84px;
+}
+
+.left,
+.right {
+    height: 6px;
+    width: 90px;
+    background-color: #333333;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.left {
+    left: 0px;
+    animation: left 2s infinite;
+}
+
+.right {
+    right: 0px;
+    animation: right 2s infinite;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    position: relative;
+}
+
+.row1 {
+    top: 0px;
+}
+
+.row2 {
+    top: 26px;
+}
+
+.row3 {
+    top: 52px;
+}
+
+.row4 {
+    top: 78px;
+}
+
+/*Negative delay values skip rather than pause.*/
+.row1 .left,
+.row1 .right {
+    animation-delay: -0s;
+    /*Obviously not needed*/
+}
+
+.row2 .left,
+.row2 .right {
+    animation-delay: -0.5s;
+}
+
+.row3 .left,
+.row3 .right {
+    animation-delay: -1s;
+}
+
+.row4 .left,
+.row4 .right {
+    animation-delay: -1.5s;
+}
+
+/* LOADER */
+
+/* HOME */
 .container {
     display: flex;
     flex-direction: row;
@@ -44,7 +138,6 @@ html {
     padding: 0 0rem 0 42%;
     margin-right: auto;
     margin-bottom: 2rem;
-    visibility: hidden;
 }
 
 .slideDown {
@@ -102,8 +195,9 @@ html {
     opacity: 0;
 }
 
+/* HOME */
 
-
+/* FONTS & KEYFRAMES */
 @font-face {
     font-family: 'Anurati';
     src: url('fonts/Anurati-Regular.eot');
@@ -126,7 +220,10 @@ html {
     font-style: normal;
 }
 
+/* FONTS & KEYFRAMES */
 
+
+/* SHIP ANIMATION */
 @keyframes text-shadow {
     0% {
         transform: rotate(-90deg) translateX(0);
@@ -181,6 +278,10 @@ html {
     }
 }
 
+/* SHIP ANIMATION */
+
+
+/* TITTLE ANIMATION */
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);
@@ -232,3 +333,43 @@ html {
         -webkit-transform: translateY(0%);
     }
 }
+
+/* TITTLE ANIMATION */
+
+
+/* LOADER */
+@keyframes left {
+
+    0%,
+    50%,
+    100% {
+        width: 90px;
+    }
+
+    25% {
+        width: 170px;
+    }
+
+    75% {
+        width: 10px;
+    }
+}
+
+@keyframes right {
+
+    0%,
+    50%,
+    100% {
+        width: 90px;
+    }
+
+    25% {
+        width: 10px;
+    }
+
+    75% {
+        width: 170px;
+    }
+}
+
+/* LOADER */
