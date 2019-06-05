@@ -7,7 +7,7 @@ $(window).on("load", function () {
 
 // PARTICLES
 $(document).ready(function () {
-    $(".particules").delay(50).animate({
+    $(".particules").delay(650).animate({
         "opacity": "1"
     }, 1600);
 });
