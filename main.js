@@ -18,6 +18,6 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         document.getElementById("stellarSystem").className = 'slideDown';
-    }, 200);
+    }, 600);
 }, false);
 // TITTLE
