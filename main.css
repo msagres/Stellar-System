@@ -25,7 +25,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F6F6F6;
+    /* background-color: #F6F6F6; */
+    background: url('img/joey-csunyo-512515-unsplash.jpg') fixed no-repeat;
+    background-size: cover;
     z-index: 999999999;
 }
 
@@ -42,7 +44,8 @@ html {
 .right {
     height: 6px;
     width: 90px;
-    background-color: #333333;
+    /* background-color: #333333; */
+    background-color: #F6F6F6;
     border-radius: 2px;
     position: absolute;
 }
