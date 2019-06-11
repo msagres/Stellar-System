@@ -172,8 +172,11 @@ html {
     margin-right: auto;
     text-align: center;
     color: rgba(7, 26, 46, 1);
-    margin-left: 35.5rem;
+    margin-left: 36rem;
+    z-index: 3;
+    cursor: pointer;
 }
+
 
 .bannerimg {
     display: flex;
@@ -184,7 +187,7 @@ html {
 }
 
 .bannerimg :first-child {
-    z-index: 100;
+    z-index: 2;
     position: absolute;
     top: 0%;
     height: 100%;
