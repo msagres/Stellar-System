@@ -101,6 +101,7 @@ html {
 .row4 .right {
     animation-delay: -1.5s;
 }
+
 /* LOADER */
 
 
@@ -257,6 +258,7 @@ html {
 
     60% {
         transform: rotate(-90deg) translateX(-0.25em);
+        color: #EEE9FE;
         text-shadow:
             0 0.03125em 5px rgba(12, 47, 251, 1),
             0 0.0625em 5px rgba(44, 252, 253, 1),
